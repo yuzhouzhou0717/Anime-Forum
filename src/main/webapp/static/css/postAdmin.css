@@ -1,0 +1,79 @@
+@charset "UTF-8";
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #dee2e6;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .comment-info td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .btn {
+            margin-right: 10px;
+        }
+
+        .add-comment-form,
+        .comment-info-form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            background-color: #ffffff;
+            border-radius: 5px;
+            display: none;
+            width: 400px; 
+        }
+
+        .add-comment-form label,
+        .user-comment-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-comment-form input,
+        .comment-info-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        .add-comment-form input[type="submit"],
+        .comment-info-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .comment-info td:nth-child(3) {
+            max-width: 200px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px; 
+        }

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@keyframes wind{
+    0% {
+        bottom: 100%;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+        bottom: -10%;
+    }
+}
+
+.speed1{
+    position: absolute;
+    animation: wind 5s linear;
+}
+ 

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body {
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            height: 54vh;
+            background-color:GhostWhite;
+        }
+
+        .div-1,
+        .div-4 {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+             
+	        }
+
+        .div-1 {
+        flex: 0.7;
+            
+             margin-right: 0px; 
+            height: 50vh;
+            justify-content: flex-end;
+           border-radius: 8px;
+           
+        }
+.div-4 {
+    flex: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px; 
+    height: 50vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-left: 1px solid #ddd; 
+    border-right: 1px solid #ddd 
+}
+.div-3{
+ 
+  display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+  
+    width:250px;
+
+}
+
+    .div-2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+
+    width:250px;
+}
+
+        .anime-card {
+            text-align: center;
+            padding: 10px;
+            width: 200px;
+            height: 190px;
+            transition: transform 0.2s ease-in-out;
+            margin: 0px;
+        }
+
+        .anime-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .anime-card img {
+            border-radius: 8px;
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .ranking-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+         
+             width:90%;
+            
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            margin: 3px;
+             
+        }
+
+        .ranking-icon {
+            margin-right: 10px;
+            font-size: 15px;
+            color: #3498db;
+        }
+
+        .ranking-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ranking-details a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .ranking-details small {
+            color: #777;
+        }

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.search-form {
+	width: 400px;
+}
+
+.sticky-top {
+	background-color: #ffffff; 
+	border-bottom: 1px solid #dddddd; 
+	z-index: 1000; 
+}
+
+.navbar {
+	transition: background-color 0.3s ease;
+}

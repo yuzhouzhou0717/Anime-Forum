@@ -1,0 +1,118 @@
+@charset "UTF-8";
+    .anime-details {
+        display: flex;
+        margin-top: 10px;
+      
+        background-color: #fff;
+        border-radius: 8px;
+       
+        overflow: hidden;
+        max-width: 1000px;
+        width: 100%;
+        padding: 20px;
+        margin-left: 180px; 
+    }
+
+    .anime-details img {
+        max-width: 700px; 
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .anime-details-text {
+        width: 70%;
+        height: 30%;
+        text-align: left;
+        
+        margin-left: 110px; 
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .comment-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    width: 70%;
+    border: 1px solid #ddd;
+     margin-left: 250px;
+     border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    margin-top: 0px;
+    width: 100%; 
+    height:100%;
+     border: 1px solid #ddd;
+}
+   .comment-item {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 20px;
+    height: 170px; 
+     word-wrap: break-word; 
+    overflow: auto; 
+    text-align: left;
+ 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+}
+
+.yz {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+          
+            padding: 10px; 
+            display: flex;
+            justify-content: flex-end;
+        }
+        .yz button {
+            margin-right: 199px; 
+        }
+.comment-form textarea {
+    width: 90%; 
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       height: 170px; 
+    overflow: auto; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+   margin-left: 3px;
+}
+.comment-form label {
+
+    margin-top: -3px; 
+  display: flex;
+  width:5%;
+}
+.comment-item p{
+    text-align: right;
+    color: #888;
+
+    margin-top: 5px; 
+}
+.fixed-button {
+    position: fixed;
+    bottom: 5px;
+    right: 200px;
+    z-index: 999; 
+}

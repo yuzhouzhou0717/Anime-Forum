@@ -1,0 +1,34 @@
+@charset "UTF-8";
+#box_autoplay {
+  position: relative;
+  overflow: hidden;
+  width: 850px; 
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.list {
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+.list img {
+  width: 100%; 
+  height: auto;
+}
+
+.list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.list li {
+  flex: 0 0 100%; 
+}
+
+
+

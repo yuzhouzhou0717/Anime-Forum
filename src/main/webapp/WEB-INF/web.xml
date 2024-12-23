@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>chapter04</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+    <!-- 配置 JSTL 标签库 -->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/lib/c.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+    
+  <servlet>
+  <servlet-name>register-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>register-goto</servlet-name>
+  <url-pattern>/client/register.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>login-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login-goto</servlet-name>
+  <url-pattern>/client/login.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>userProfile-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/userProfile.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>userProfile-goto</servlet-name>
+  <url-pattern>/client/userProfile.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>allAnime-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/allAnime.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>allAnime-goto</servlet-name>
+  <url-pattern>/client/allAnime.jsp</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>SearchAnime-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/SearchAnime.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SearchAnime-goto</servlet-name>
+  <url-pattern>/client/SearchAnime.jsp</url-pattern>
+  </servlet-mapping>
+        <servlet>
+  <servlet-name>postAdmin-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/postAdmin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>postAdmin-goto</servlet-name>
+  <url-pattern>/client/postAdmin.jsp</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>animeDetails-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/animeDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>animeDetails-goto</servlet-name>
+  <url-pattern>/client/animeDetails.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>adminLogin-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/adminLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>adminLogin-goto</servlet-name>
+  <url-pattern>/client/adminLogin.jsp</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>admin-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/admin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>admin-goto</servlet-name>
+  <url-pattern>/client/admin.jsp</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>animeAdmin-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/animeAdmin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>animeAdmin-goto</servlet-name>
+  <url-pattern>/client/animeAdmin.jsp</url-pattern>
+  </servlet-mapping>
+        <servlet>
+  <servlet-name>commentAdmin-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/commentAdmin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>commentAdmin-goto</servlet-name>
+  <url-pattern>/client/commentAdmin.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Post-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/Post.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Post-goto</servlet-name>
+  <url-pattern>/client/Post.jsp</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>PostDetails-goto</servlet-name>
+  <jsp-file>/WEB-INF/client/PostDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>PostDetails-goto</servlet-name>
+  <url-pattern>/client/PostDetails.jsp</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>chapter04.RegisterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>chapter04.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AnimeListServlet</servlet-name>
+    <servlet-class>chapter04.AnimeListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AnimeListServlet</servlet-name>
+    <url-pattern>/AnimeListServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>adminLoginServlet</servlet-name>
+    <servlet-class>chapter04.adminLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>adminLoginServlet</servlet-name>
+    <url-pattern>/adminLoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>chapter04.AdminLogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>chapter04.UserListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/UserListServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>chapter04.AddUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/AddUserServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>chapter04.DeleteUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/DeleteUserServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ModifyUserServlet</servlet-name>
+    <servlet-class>chapter04.ModifyUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ModifyUserServlet</servlet-name>
+    <url-pattern>/ModifyUserServlett</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AddAnimeServlet</servlet-name>
+    <servlet-class>chapter04.AddAnimeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddAnimeServlet</servlet-name>
+    <url-pattern>/AddAnimeServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteAnimeServlet</servlet-name>
+    <servlet-class>chapter04.DeleteAnimeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteAnimeServlet</servlet-name>
+    <url-pattern>/DeleteAnimeServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeleteCommentServlet</servlet-name>
+    <servlet-class>chapter04.DeleteCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteCommentServlet</servlet-name>
+    <url-pattern>/DeleteCommentServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>pCommentServlet</servlet-name>
+    <servlet-class>chapter04.pCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>pCommentServlet</servlet-name>
+    <url-pattern>/pCommentServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UserDeleteCommentServlet</servlet-name>
+    <servlet-class>chapter04.UserDeleteCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserDeleteCommentServlet</servlet-name>
+    <url-pattern>/UserDeleteCommentServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UserDeletePostServlet</servlet-name>
+    <servlet-class>chapter04.UserDeletePostServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserDeletePostServlet</servlet-name>
+    <url-pattern>/UserDeletePostServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UserDeletePcommentServlet</servlet-name>
+    <servlet-class>chapter04.UserDeletePcommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserDeletePcommentServlet</servlet-name>
+    <url-pattern>/UserDeletePcommentServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>LikeCommentServlet</servlet-name>
+    <servlet-class>chapter04.LikeCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LikeCommentServlet</servlet-name>
+    <url-pattern>/LikeCommentServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>chapter04.UpdateUserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <servlet-class>chapter04.UpdatePwdServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <url-pattern>/UpdatePwdServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DeletePostServlet</servlet-name>
+    <servlet-class>chapter04.DeletePostServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeletePostServlet</servlet-name>
+    <url-pattern>/DeletePostServlet</url-pattern>
+</servlet-mapping>
+  
+  
+</web-app>
